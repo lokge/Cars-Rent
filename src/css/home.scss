@@ -1,0 +1,32 @@
+.home {
+    padding: 48px 0;
+    .container {
+        background: url('../img/home-bg.png') right no-repeat;
+    }
+    &-book-car {
+        width: 416px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 6px 12px #135dac24;
+        border-radius: 20px;
+        padding: 40px;
+        .home-book-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .home-book-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .home-book-btn {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}

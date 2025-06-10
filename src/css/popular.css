@@ -1,0 +1,66 @@
+.popular {
+  padding: 84px 0;
+  text-align: center;
+}
+.popular .popular-title {
+  margin: 24px 0 64px;
+}
+.popular .popular-cards {
+  display: flex;
+  gap: 32px;
+}
+.popular .popular-cards .popular-card {
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0px 12px 24px 0px rgba(16, 76, 139, 0.1607843137);
+}
+.popular .popular-cards .popular-card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+}
+.popular .popular-cards .popular-card-rate {
+  padding-left: 20px;
+  background-image: url("../img/star.svg");
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  background-repeat: no-repeat;
+  background-position-y: top;
+}
+.popular .popular-cards .popular-card-rate-review {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #959595;
+}
+.popular .popular-cards .popular-card-details {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  width: 208px;
+}
+.popular .popular-cards .popular-card-details-item {
+  text-align: left;
+  color: #959595;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  height: 20px;
+  padding-left: 22px;
+}
+.popular .popular-cards .popular-card-details-item.places {
+  background: url("../img/places.svg") left no-repeat;
+}
+.popular .popular-cards .popular-card-details-item.gearbox {
+  background: url("../img/gear.svg") left no-repeat;
+}
+.popular .popular-cards .popular-card-details-item.conditioning {
+  background: url("../img/snow.svg") left no-repeat;
+}
+.popular .popular-cards .popular-card-details-item.doors {
+  background: url("../img/doors.svg") left no-repeat;
+}
+.popular .popular-cards .popular-card-details-item:nth-of-type(2n) {
+  margin: 0 auto;
+}/*# sourceMappingURL=popular.css.map */
