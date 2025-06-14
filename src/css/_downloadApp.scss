@@ -1,0 +1,55 @@
+.download-app {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    .container {
+        z-index: 10;
+        position: relative;
+    }
+    &-container {
+        position: relative;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+        &.visible {
+            .download-app-phone {
+                bottom: -640px; 
+                opacity: 1;
+            }
+        }
+    }
+    &-phone {
+        position: absolute;
+        right: 0;
+        bottom: -940px;
+        opacity: 0;
+        transition: all 0.7s ease-in-out;
+    }
+    &-vector {
+        position: absolute;
+        left: -390px;
+        bottom: -160px;
+    }
+    .main-title {
+        font-weight: 600;
+        font-size: 48px;
+        color: #282828;
+        line-height: 120%;
+        margin-top: 24px;
+        &-mark {
+            color: #1572D3;
+            font-weight: 600;
+        }
+    }
+    &-description {
+        font-weight: 400;
+        font-size: 16px;
+        color: #3E3E3E;
+        margin: 40px 0;
+    }
+    &-markets {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+    }
+}

@@ -54,6 +54,7 @@
         opacity: 0;
         gap: 24px;
         transform: translateX(45px);
+        z-index: 20;
         &-icon {
             width: 64px;
             height: 64px;

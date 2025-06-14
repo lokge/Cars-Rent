@@ -1,0 +1,108 @@
+.feedback {
+    background-color: #F7FBFF;
+    width: 100%;
+    padding: 127px 0;
+    text-align: center;
+    .container {
+        position: relative;
+        height: 100%;
+        &::before {
+            content: '';
+            position: absolute;
+            background: url('../img/quotation.png') right no-repeat;
+            width: 279px;
+            height: 100%;
+            right: 0;
+            top: -334px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background: url('../img/quotation.png') left no-repeat;
+            width: 292px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transform: rotateY(180deg);
+        }
+    }
+    .main-title {
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 130%;
+        color: #333333;
+    }
+
+    .feedback-cards {
+        display: flex;
+        gap: 40px;
+        z-index: 20;
+        position: relative;
+        margin-top: 80px;
+        width: 100%;
+        overflow: auto;
+        .feedback-card {
+            min-width: 794px;
+            height: 438px;
+            display: flex;
+            border-radius: 24px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 12px 24px 0px #104C8B29;
+            &-image {
+                width: 50%;
+                object-fit: cover;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &-right {
+                width: 50%;
+                padding: 40px;
+                text-align: left;
+            }
+            &-title {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 150%;
+                color: #383838;
+                margin-bottom: 24px;
+                display: block;
+                &-numbers {
+                    font-size: 64px;
+                }
+            }
+            &-stars {
+                display: flex;
+                gap: 4px;
+                margin-bottom: 48px;
+            }
+            &-star {
+                width: 24px;
+                height: 24px;
+                display: block;
+                background: url('../img/star.svg') center/cover no-repeat;
+            }
+            &-feedback {
+                font-weight: 400;
+                font-size: 18px;
+                color: #282828;
+            }
+            &-username {
+                font-weight: 500;
+                font-size: 24px;
+                margin-top: 80px;
+                color: #252525;
+            }
+            &-address {
+                font-weight: 400;
+                font-size: 14px;
+                color: #838383;
+                margin-top: 16px;
+            }
+        }
+    }
+}

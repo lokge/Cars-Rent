@@ -1,0 +1,82 @@
+.footer {
+    padding: 40px 0;
+    background-color: #051C34;
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 64px;
+        border-bottom: 1px solid #575757;
+    }
+    &-left {
+        width: 191px;
+        color: #d6d6d6;
+        font-size: 14px;
+        font-weight: 400;
+        font-size: 14px;
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 32px;
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                line-height: 150%;
+            }
+        }
+    }
+    &-right {
+        width: auto;
+        display: flex;
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            &-title {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                color: white;
+            }
+            &-item {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #D6D6D6;
+            }
+            &:nth-of-type(2) {
+                margin: 0 81px 0 96px;
+            }
+            &:last-of-type {
+                margin-left: 67px;
+            }
+            &-socials {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+            }
+            &-social {
+                width: 24px;
+                height: 24px;
+                &.facebook {
+                background: url('../img/facebook.svg') center/cover no-repeat;
+                }
+                &.instagram {
+                background: url('../img/instagram.svg') center/cover no-repeat;
+                }
+                &.youtube {
+                background: url('../img/youtube.svg') center/cover no-repeat;
+                }
+            }
+        }
+    }
+    &-copyrights {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #D6D6D6;
+        margin-top: 32px;
+    }
+}
