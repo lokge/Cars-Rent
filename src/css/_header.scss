@@ -5,6 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .header-burger-btn {
+        display: none;
+    }
+
     .header-logo {
         img {
             width: 100%;
@@ -34,14 +39,13 @@
             color: #484848;
             font-size: 16px;
             font-weight: 500;
+            cursor: pointer;
         }
 
         &-up {
+            cursor: pointer;
             color: #fff;
             font-size: 16px;
-            font-weight: 500;
-            background-color: #1572D3;
-            padding: 16px 32px;
             border-radius: 8px;
         }
     }

@@ -22,7 +22,7 @@
         </nav>
         <div class="header-login">
             <div class="header-sign-in">Sign in</div>
-            <div class="header-sign-up">Sign up</div>
+            <div class="btn btn-primary header-sign-up">Sign up</div>
         </div>
     </header>
 
@@ -51,7 +51,7 @@
                             </ul>
                         </ul>
                         <ul class="custom-select" name="place-of-return">
-                            <li class="custom-select-title">Place of return</li>
+                            <li class="custom-select-title" value="#">Place of return</li>
                             <ul class="custom-dropdown">
                                 <li class="custom-select-item" value="Bishkek">Bishkek</li>
                                 <li class="custom-select-item" value="Osh">Osh</li>
@@ -59,10 +59,10 @@
                                 <li class="custom-select-item" value="Naryn">Naryn</li>
                             </ul>
                         </ul>
-                        <label for="rental-date" class="custom-input" data-title="Rental date">
+                        <label for="rental-date" class="custom-input date-custom-input" data-title="Rental date">
                             <input type="date" name="rental-date">
                         </label>
-                        <label for="return" class="custom-input" data-title="Return date">
+                        <label for="return" class="custom-input date-custom-input" data-title="Return date">
                             <input type="date" name="return-date">
                         </label>
 
@@ -158,7 +158,6 @@
             <div class="container">
                 <span class="btn btn-opacity">POPULAR RENTAL DEALS</span>
                 <h2 class="main-title popular-title">Most popular cars rental deals</h2>
-
                 <div class="popular-cards">
                     <div class="popular-card">
                         <img src="./src/img/jaguar-card.png" alt="Jaguar XE L P250 image">
@@ -171,16 +170,77 @@
                                 <span class="popular-card-details-item conditioning">Air Conditioning</span>
                                 <span class="popular-card-details-item doors">4 Doors</span>
                             </div>
-                            <form>
+                            <div>
                                 <div class="popular-card-price">
                                     <span class="popular-card-price-title">Price</span>
                                     <span class="popular-card-price-list"><b>$1,800</b><span class="popular-card-price-days">/day</span> </span>
                                 </div>
                                 <button class="btn btn-primary popular-card-btn">Rent Now <img src="./src/img/arrow-right.svg" alt="arrow-icon"> </button>
-                            </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-card">
+                        <img src="./src/img/audi-card.png" alt="Audi R8">
+                        <div class="popular-card-description">
+                            <h3 class="popular-card-title">Audi R8</h3>
+                            <span class="popular-card-rate">4.6 <span class="popular-card-rate-review">(1.936 reviews)</span> </span>
+                            <div class="popular-card-details">
+                                <span class="popular-card-details-item places">2 Passagers</span>
+                                <span class="popular-card-details-item gearbox">Auto</span>
+                                <span class="popular-card-details-item conditioning">Air Conditioning</span>
+                                <span class="popular-card-details-item doors">2 Doors</span>
+                            </div>
+                            <div>
+                                <div class="popular-card-price">
+                                    <span class="popular-card-price-title">Price</span>
+                                    <span class="popular-card-price-list"><b>$2,100</b><span class="popular-card-price-days">/day</span> </span>
+                                </div>
+                                <button class="btn btn-primary popular-card-btn">Rent Now <img src="./src/img/arrow-right.svg" alt="arrow-icon"> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-card">
+                        <img src="./src/img/bmw-card.png" alt="BMW M3 G80">
+                        <div class="popular-card-description">
+                            <h3 class="popular-card-title">BMW M3 G80</h3>
+                            <span class="popular-card-rate">5.0 <span class="popular-card-rate-review">(2.396 reviews)</span> </span>
+                            <div class="popular-card-details">
+                                <span class="popular-card-details-item places">4 Passagers</span>
+                                <span class="popular-card-details-item gearbox">Auto</span>
+                                <span class="popular-card-details-item conditioning">Air Conditioning</span>
+                                <span class="popular-card-details-item doors">4 Doors</span>
+                            </div>
+                            <div>
+                                <div class="popular-card-price">
+                                    <span class="popular-card-price-title">Price</span>
+                                    <span class="popular-card-price-list"><b>$1,600</b><span class="popular-card-price-days">/day</span> </span>
+                                </div>
+                                <button class="btn btn-primary popular-card-btn">Rent Now <img src="./src/img/arrow-right.svg" alt="arrow-icon"> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-card">
+                        <img src="./src/img/lambo-card.png" alt="Lamborghini Huracan">
+                        <div class="popular-card-description">
+                            <h3 class="popular-card-title">Lamborghini Huracan</h3>
+                            <span class="popular-card-rate">4.3 <span class="popular-card-rate-review">(2.236 reviews)</span> </span>
+                            <div class="popular-card-details">
+                                <span class="popular-card-details-item places">2 Passagers</span>
+                                <span class="popular-card-details-item gearbox">Auto</span>
+                                <span class="popular-card-details-item conditioning">Air Conditioning</span>
+                                <span class="popular-card-details-item doors">2 Doors</span>
+                            </div>
+                            <div>
+                                <div class="popular-card-price">
+                                    <span class="popular-card-price-title">Price</span>
+                                    <span class="popular-card-price-list"><b>$2,300</b><span class="popular-card-price-days">/day</span> </span>
+                                </div>
+                                <button class="btn btn-primary popular-card-btn">Rent Now <img src="./src/img/arrow-right.svg" alt="arrow-icon"> </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <span class="btn show-all-cars">Show all vehicles</span>
             </div>
         </section>
         <section class="feedback">
@@ -351,6 +411,27 @@
         </div>
     </footer>
     
+    <div class="login-modal">
+        <div class="login-modal-image">
+            <img src="./src/img/bmw-f90.jpg" alt="BMW F90">
+        </div>
+        <div class="login-modal-content">
+            <span class="login-modal-close">&times;</span>
+            <h2 class="login-modal-title">Login to your Account</h2>
+            <p class="login-modal-subtitle">See what is going on with your business</p>
+            <form id="login-form" class="login-modal-form">
+                <label for="email" class="default-label login-modal-email">
+                    <span class="default-label-title">Email</span>
+                    <input class="default-input" type="email" name="email" placeholder="Email">
+                </label>
+                <label for="password" class="default-label login-modal-password">
+                    <span class="default-label-title">Password</span>
+                    <input class="default-input" type="password" name="password" placeholder="Enter password">
+                </label>
+                <button type="submit" class="btn btn-primary login-modal-btn">Login</button>
+            </form>
+        </div>
+    </div>
     <script src="./src/js/animations.js"></script>
     <script src="./src/js/main.js"></script>
 </body>
