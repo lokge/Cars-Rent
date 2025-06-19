@@ -53,3 +53,23 @@
         gap: 17px;
     }
 }
+
+@media (max-width: 768px) {
+    .download-app {
+        padding: 60px 0;
+        text-align: center;
+        &-vector {
+            position: absolute;
+            bottom: 0;
+            left: -50%;
+            width: 500px;
+        }
+        &-markets {
+            justify-content: center;
+        }
+
+        &-phone {
+            display: none;
+        }
+    }
+}

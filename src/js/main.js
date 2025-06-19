@@ -41,3 +41,17 @@ closeModalBtn.addEventListener("click", function() {
     loginModal.classList.remove('active');
     body[0].classList.remove('no-scroll');
 });
+
+const headerBurgerBtn = document.querySelectorAll(".header-burger-btn");
+const headerBurgerContent = document.querySelector(".header-burger");
+
+headerBurgerBtn.forEach((btn) => {
+    btn.addEventListener("click", function() {
+        headerBurgerContent.classList.toggle('active');
+        if (headerBurgerContent.classList.contains('active')) {
+            body[0].classList.add('no-scroll');
+        } else {
+            body[0].classList.remove('no-scroll');
+        }
+    });
+});

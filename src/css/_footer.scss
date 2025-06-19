@@ -1,7 +1,7 @@
 .footer {
     padding: 40px 0;
     background-color: #051C34;
-
+    overflow: hidden;
     &-top {
         display: flex;
         justify-content: space-between;
@@ -30,6 +30,7 @@
     &-right {
         width: auto;
         display: flex;
+        overflow: hidden;
         &-list {
             display: flex;
             flex-direction: column;
@@ -78,5 +79,42 @@
         line-height: 150%;
         color: #D6D6D6;
         margin-top: 32px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        &-top {
+            flex-direction: column;
+            row-gap: 50px;
+        }
+        &-right {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &-top {
+            padding-bottom: 32px;
+        }
+
+        &-left {
+            display: none;
+        }
+
+        &-right {
+            flex-wrap: wrap;
+            row-gap: 50px;
+            justify-content: space-around;
+            column-gap: 40px;
+            text-align: center;
+            &-list {
+                &:nth-of-type(2), &:last-of-type {
+                    margin: 0;
+                }
+            }
+        }
     }
 }

@@ -71,3 +71,36 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .description {
+        .description-car-logos {
+            margin-top: 100px;
+            gap: 50px;
+            overflow: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .description {
+        padding: 43px 0;
+        .description-title {
+            margin: 16px 0 40px;
+        }
+        .description-cards {
+            flex-direction: column;
+            row-gap: 35px;
+            .description-card {
+                &-title {
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}
