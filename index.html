@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/css/style.css">
     <title>AutoRent.kg</title>
 </head>
@@ -24,7 +25,28 @@
             <div class="header-sign-in">Sign in</div>
             <div class="btn btn-primary header-sign-up">Sign up</div>
         </div>
+        <span class="header-burger-btn"></span>
     </header>
+
+    <div class="header-burger">
+        <div class="header-burger-header">
+            <img class="header-burger-logo" src="./src/img/main-logo.svg" alt="AutoRent.kg Logo">
+            <span class="header-burger-btn close"></span>
+        </div>
+        <div class="header-burger-content">
+            <div class="header-login">
+                <div class="header-sign-in">Sign in</div>
+                <div class="btn btn-primary header-sign-up">Sign up</div>
+            </div>
+
+            <ul class="header-burger-list">
+                <li class="header-burger-list-item"><a href="#home">Become a renter</a></li>
+                <li class="header-burger-list-item"><a href="#about">Rental deals</a></li>
+                <li class="header-burger-list-item"><a href="#services">How it work</a></li>
+                <li class="header-burger-list-item"><a href="#contact">Why choose us</a></li>
+            </ul>
+        </div>
+    </div>
 
     <main class="main">
         <section class="home">
@@ -248,87 +270,98 @@
                 <button class="btn btn-opacity">TESTIMONIALS</button>
                 <h2 class="main-title">What peole say about us?</h2>
                 <div class="feedback-cards">
-                    <div class="feedback-card">
-                        <div class="feedback-card-image">
-                            <img class="feedback-card-user" src="./src/img/user-image.webp" alt="User image">
-                        </div>
-                        <div class="feedback-card-right">
-                            <div class="feedback-card-rate">
-                                <span class="feedback-card-title"><span class="feedback-card-title-numbers">5.0</span> stars</span>
-                                <div class="feedback-card-stars">
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="feedback-card-image">
+                                        <img class="feedback-card-user" src="./src/img/user-image.webp" alt="User image">
+                                    </div>
+                                    <div class="feedback-card-right">
+                                        <div class="feedback-card-rate">
+                                            <span class="feedback-card-title"><span class="feedback-card-title-numbers">5.0</span> stars</span>
+                                            <div class="feedback-card-stars">
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                            </div>
+                                            <p class="feedback-card-feedback">“I have been using your services for 3 years. Your service is great, I will continue to use your service.”</p>
+                                            <h5 class="feedback-card-username">Charlie Johnson</h5>
+                                            <p class="feedback-card-address">From New York, US</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="feedback-card-feedback">“I have been using your services for 3 years. Your service is great, I will continue to use your service.”</p>
-                                <h5 class="feedback-card-username">Charlie Johnson</h5>
-                                <p class="feedback-card-address">From New York, US</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="feedback-card-image">
+                                        <img class="feedback-card-user" src="./src/img/user-image-2.jpg" alt="User image">
+                                    </div>
+                                    <div class="feedback-card-right">
+                                        <div class="feedback-card-rate">
+                                            <span class="feedback-card-title"><span class="feedback-card-title-numbers">5.0</span> stars</span>
+                                            <div class="feedback-card-stars">
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                            </div>
+                                            <p class="feedback-card-feedback">“I feel very secure when using caretall's services. Your customer care team is very enthusiastic and the driver is always on time.”</p>
+                                            <h5 class="feedback-card-username">Charlie Johnson</h5>
+                                            <p class="feedback-card-address">From New York, US</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="feedback-card-image">
+                                        <img class="feedback-card-user" src="./src/img/user-image-3.webp" alt="User image">
+                                    </div>
+                                    <div class="feedback-card-right">
+                                        <div class="feedback-card-rate">
+                                            <span class="feedback-card-title"><span class="feedback-card-title-numbers">5.0</span> stars</span>
+                                            <div class="feedback-card-stars">
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                            </div>
+                                            <p class="feedback-card-feedback">“I feel very secure when using caretall's services. Your customer care team is very enthusiastic and the driver is always on time.”</p>
+                                            <h5 class="feedback-card-username">Charlie Johnson</h5>
+                                            <p class="feedback-card-address">From New York, US</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="feedback-card-image">
+                                        <img class="feedback-card-user" src="./src/img/user-image-4.jpg" alt="User image">
+                                    </div>
+                                    <div class="feedback-card-right">
+                                        <div class="feedback-card-rate">
+                                            <span class="feedback-card-title"><span class="feedback-card-title-numbers">5.0</span> stars</span>
+                                            <div class="feedback-card-stars">
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                                <span class="feedback-card-star"></span>
+                                            </div>
+                                            <p class="feedback-card-feedback">“I feel very secure when using caretall's services. Your customer care team is very enthusiastic and the driver is always on time.”</p>
+                                            <h5 class="feedback-card-username">Charlie Johnson</h5>
+                                            <p class="feedback-card-address">From New York, US</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="feedback-card">
-                        <div class="feedback-card-image">
-                            <img class="feedback-card-user" src="./src/img/user-image.webp" alt="User image">
-                        </div>
-                        <div class="feedback-card-right">
-                            <div class="feedback-card-rate">
-                                <span class="feedback-card-title"><span class="feedback-card-title-numbers">5.0</span> stars</span>
-                                <div class="feedback-card-stars">
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                </div>
-                                <p class="feedback-card-feedback">“I feel very secure when using caretall's services. Your customer care team is very enthusiastic and the driver is always on time.”</p>
-                                <h5 class="feedback-card-username">Charlie Johnson</h5>
-                                <p class="feedback-card-address">From New York, US</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feedback-card">
-                        <div class="feedback-card-image">
-                            <img class="feedback-card-user" src="./src/img/user-image.webp" alt="User image">
-                        </div>
-                        <div class="feedback-card-right">
-                            <div class="feedback-card-rate">
-                                <span class="feedback-card-title"><span class="feedback-card-title-numbers">5.0</span> stars</span>
-                                <div class="feedback-card-stars">
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                </div>
-                                <p class="feedback-card-feedback">“I feel very secure when using caretall's services. Your customer care team is very enthusiastic and the driver is always on time.”</p>
-                                <h5 class="feedback-card-username">Charlie Johnson</h5>
-                                <p class="feedback-card-address">From New York, US</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feedback-card">
-                        <div class="feedback-card-image">
-                            <img class="feedback-card-user" src="./src/img/user-image.webp" alt="User image">
-                        </div>
-                        <div class="feedback-card-right">
-                            <div class="feedback-card-rate">
-                                <span class="feedback-card-title"><span class="feedback-card-title-numbers">5.0</span> stars</span>
-                                <div class="feedback-card-stars">
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                    <span class="feedback-card-star"></span>
-                                </div>
-                                <p class="feedback-card-feedback">“I feel very secure when using caretall's services. Your customer care team is very enthusiastic and the driver is always on time.”</p>
-                                <h5 class="feedback-card-username">Charlie Johnson</h5>
-                                <p class="feedback-card-address">From New York, US</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -432,6 +465,17 @@
             </form>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 40,
+            loop: true,
+            slidesPerView: "auto",
+        });
+    </script>
     <script src="./src/js/animations.js"></script>
     <script src="./src/js/main.js"></script>
 </body>

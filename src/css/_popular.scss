@@ -6,7 +6,8 @@
     }
     .popular-cards {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         gap: 32px;
         .popular-card {
             padding: 24px;
@@ -119,6 +120,30 @@
         transition: 0.3s;
         &:hover {
             background-color: #edebeb;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .popular {
+        padding: 64px 0;
+        .popular-cards {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .popular-card {
+                width: 100%;
+                &-details {
+                    width: 100%;
+                    padding-bottom: 16px;
+                    column-gap: 20px;
+                    &-item {
+                        &:nth-of-type(2n) {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }
