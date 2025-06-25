@@ -10,7 +10,7 @@ A responsive landing page for a car rental service. This project was created for
 
 - HTML5, SCSS
 - Vanilla JavaScript
-- Responsive layout (Flexbox, Grid)
+- Responsive layout (Flexbox)
 - BEM methodology
 - CSS animations and transitions
 
@@ -20,7 +20,7 @@ A responsive landing page for a car rental service. This project was created for
 - Popup/modal window with animation
 - Interactive UI elements
 - Semantic HTML structure
-- Partially responsive (mobile support in progress)
+- Partially responsive (Desktop, Tablet and Mobile)
 
 ## 🔍 How to Run
 
