@@ -1,4 +1,4 @@
-# 🚗 Cars-Rent
+# 🚗 Cars-Rent (project demo: https://lokge.github.io/Cars-Rent/)
 
 A responsive landing page for a car rental service. This project was created for portfolio purposes, focusing on clean layout, modern UI, and interactive components.
 
